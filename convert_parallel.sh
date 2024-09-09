@@ -8,7 +8,7 @@
 cd data
 
 conda activate semopenalex
-conda install rdflib==7.0.0
+pip install rdflib==7.0.0
 
 process_one(){
     python ../convert_to_ntriples.py $1 | lz4 -c -9 -z >  ${1%.trig.gz}.nt.lz4
