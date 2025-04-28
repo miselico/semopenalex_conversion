@@ -5,6 +5,6 @@
 mkdir data
 cd data
 
-cat ttlfilesSOA_2025_02_11.txt | xargs -n 1 -P 10 wget -q 
+cat ../ttlfilesSOA_2025_02_11.txt | xargs -n 1 -P 10 wget -q 
 
 
