@@ -26,5 +26,5 @@ process_one(){
 export -f process_one
 
 
-ls -1 -S *.trig.gz | xargs -P 50 -I {} bash -c 'process_one "$@"' _ {}
+ls -1 -S *.trig.gz | xargs -P 30 -I {} bash -c 'process_one "$@"' _ {}
 
